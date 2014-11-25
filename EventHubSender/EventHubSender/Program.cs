@@ -33,9 +33,7 @@ namespace EventHubSender
                 }
                 catch (Exception exception)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("{0} ERROR: {1}", DateTime.Now.ToString(), exception.Message);
-                    Console.ResetColor();
                 }
                 await Task.Delay(200);
             }
